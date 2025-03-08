@@ -1,0 +1,36 @@
+.exercise-page {
+    padding: 12vh 5vw;
+}
+
+.exercise-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    align-items: center;
+}
+
+.exercise-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-data h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.exercise-data ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.exercise-data ul li {
+    list-style: none;
+    padding: 5px 15px;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    color: #007bff;
+}

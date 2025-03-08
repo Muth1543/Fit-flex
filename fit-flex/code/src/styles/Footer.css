@@ -1,0 +1,44 @@
+.Footer {
+    background: linear-gradient(135deg, #007bff, #6610f2); /* Matching the gradient from the image */
+    padding: 0 10vw; /* Consistent padding with your design */
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+    color: white; /* Text color to stand out against the gradient */
+}
+
+.footer-body ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-body ul li {
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for a subtle look */
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 10px 0; /* Added padding for better spacing */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-body ul li:hover {
+    color: #ff5722; /* Orange hover color to match the fitness theme, replacing tomato */
+}
+
+.Footer hr {
+    width: 95%;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light, subtle border to match the gradient */
+    margin: 2vh auto; /* Centered with some vertical spacing */
+}
+
+.Footer p {
+    margin: 0;
+    text-align: center;
+    padding: 2vh 0; /* Adjusted for consistency */
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent white for readability */
+}

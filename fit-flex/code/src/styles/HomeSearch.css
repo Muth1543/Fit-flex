@@ -1,0 +1,176 @@
+.home-search-component {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff, #6610f2); /* Gradient matching the image */
+    color: white;
+    padding: 5vh 5vw;
+}
+
+.home-search-component h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white; /* Changed to white to match the gradient background */
+    font-weight: 600;
+    margin: 0;
+}
+
+.search-type-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    gap: 2vw;
+    margin-bottom: 4vh;
+}
+
+.search-type-buttons h4 {
+    font-size: 1.2rem;
+    color: white; /* Changed to white for visibility on gradient */
+    font-weight: 400;
+    margin: 0;
+}
+
+.search-type-buttons span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5); /* Lighter border for visibility on gradient */
+    border-radius: 2rem;
+    padding: 2px 2px;
+}
+
+.search-type-buttons button {
+    height: 6vh;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7); /* Increased opacity for better contrast */
+    color: #333; /* Dark text for better visibility */
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for better visibility */
+}
+
+
+.search-type-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker on hover */
+}
+
+.search-type-buttons .active {
+    background-color: white; /* Fully white for active button */
+    color: #007bff; /* Blue text to match the theme */
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    padding: 2px 15px;
+}
+
+.search-body {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /* White background for search bar to match image */
+    border-radius: 0.5rem;
+    padding: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow like in the image */
+}
+
+.search-body select {
+    width: 80%;
+    height: 9vh;
+    border: none;
+    font-size: 1.1rem;
+    outline: none; /* Remove default outline */
+}
+
+.search-body select::placeholder {
+    font-size: 1.1rem;
+    color: #888; /* Placeholder color for readability */
+}
+
+.search-body button {
+    width: 20%;
+    height: 9vh;
+    border-radius: 0.5rem;
+    border: none;
+    background: #ff5722; /* Orange button to match fitness theme, similar to image */
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-body button:hover {
+    background: #e64a19; /* Darker orange on hover */
+}
+
+.popular-categories-container {
+    width: 80%; /* Wider to match the image layout */
+    margin: 5vh auto; /* Centered more symmetrically */
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh; /* Added for spacing at the bottom */
+    color: white; /* Text color to stand out against gradient */
+}
+
+.popular-categories-container span {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 5px;
+    margin-bottom: 2vh;
+    justify-content: center;
+}
+
+.popular-categories-container span h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white; /* Changed to white for visibility on gradient */
+}
+
+.popular-categories-container span .fire-icon {
+    color: white; /* Changed to white for visibility on gradient */
+}
+
+.popular-categories {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3vw;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.popular-category {
+    flex: 0 1 calc(25% - 3vw); /* Four cards per row, accounting for gap, like in the image */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 1rem; /* More rounded corners to match image */
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow like in the image */
+    transition: transform 0.5s ease-in-out;
+}
+
+.popular-category:hover {
+    transform: scale(1.1);
+}
+
+.popular-category img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Slightly rounded image corners */
+    object-fit: cover; /* Ensures images fit nicely within the card */
+}
+
+.popular-category p {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #333; /* Darker text for readability on white background */
+}

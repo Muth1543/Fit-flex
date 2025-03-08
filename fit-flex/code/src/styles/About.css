@@ -1,0 +1,79 @@
+/* ======================== */
+/* About Section Redesign */
+/* ======================== */
+.about-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+    background-color: #f8f9fa;
+    padding: 5vh 5vw;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.about-text span .about-line {
+    height: 3px;
+    width: 60px;
+    background-color: #007bff;
+}
+
+.about-text span h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image img {
+        max-width: 80%;
+    }
+    .about-text {
+        text-align: center;
+    }
+}
